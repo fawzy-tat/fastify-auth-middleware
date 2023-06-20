@@ -23,6 +23,11 @@ If you'll use this package with Auth0, This package is specifically designed to 
 To use this package into your fastify project, follow these simple steps:
 
 1. Install the package.
+
+```shell
+npm i fastify-auth-middleware
+```
+
 2. Register the plugin.
 
 ## Examples
