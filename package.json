@@ -2,12 +2,12 @@
   "name": "fastify-auth-middleware",
   "license": "MIT",
   "description": "Fastify plugin to allow passing RBAC based JWT tokens as a route middleware.",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "main": "dist/index.js",
   "types": "dist",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fawzy-tat/fastify-auth-rbac"
+    "url": "https://github.com/fawzy-tat/fastify-auth-middleware"
   },
   "scripts": {
     "build": "tsc -p ."
