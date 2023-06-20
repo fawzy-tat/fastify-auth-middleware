@@ -27,7 +27,7 @@ To use this package into your fastify project, follow these simple steps:
 
 ## Examples
 
-Installing
+**Installing**
 
 ```Javascript
 import { authPlugin } from 'fastify-auth-middleware';
@@ -37,7 +37,7 @@ const server = fastify({
 server.register(authPlugin);
 ```
 
-Or
+**OR**
 
 ```Javascript
 const FastifyAuthMiddleware = require('fastify-auth-middleware');
@@ -47,7 +47,7 @@ const server = fastify({
 server.register(FastifyAuthMiddleware.authPlugin);
 ```
 
-Protecting Routes
+**Protecting Routes**
 
 ```Javascript
 import { authPlugin } from 'fastify-auth-middleware';
@@ -72,6 +72,21 @@ server.get('/actions', { preHandler: [fastify.jwtVerify({ scopes: ['read:actions
   return { message: 'That is fantastic! You now have the ability to view and read actions.'
 });
 
+```
+
+## Typescript support ( optional )
+
+To avoid encountering the error message "Property 'jwtVerify' does not exist on type 'FastifyInstance<>'", it is necessary to include the 'jwtVerify' property when registering your routes within a Fastify instance.
+
+```Javascript
+import { FastifyInstance } from 'fastify';
+export interface FastifyInstancePlugin extends FastifyInstance {
+    jwtVerify?: any;
+}
+
+const routes = async (fastify: FastifyInstancePlugin) => {
+    // your routes
+}
 ```
 
 ## Find a bug?
