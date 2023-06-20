@@ -7,7 +7,7 @@ By leveraging this feature, you can easily apply permissions to private routes.
 
 - While this package is particularly well-suited for use with Auth0 API Authorization, it is not limited to it and can be utilized in other scenarios as well.
 
-## Usage
+## Features
 
 fastify-auth-middleware offers two key functionalities:
 
@@ -22,8 +22,8 @@ If you'll use this package with Auth0, This package is specifically designed to 
 
 To use this package into your fastify project, follow these simple steps:
 
-Install the package.
-Register the plugin.
+1. Install the package.
+2. Register the plugin.
 
 ## Examples
 
